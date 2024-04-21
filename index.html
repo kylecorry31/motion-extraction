@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Extraction</title>
+  </head>
+  <body
+    style="
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      background-color: black;
+      color: white;
+      text-align: center;
+    "
+  >
+    <video id="video" width="640" height="480" autoplay hidden></video>
+    <canvas id="canvas" width="640" height="480" hidden></canvas>
+    <img
+      id="image"
+      style="
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 100vh;
+      "
+    />
+    <br />
+    <div style="padding: 16px">
+      <label for="history">Number of frames</label>
+      <br />
+      <input type="number" step="1" id="history" value="10" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
